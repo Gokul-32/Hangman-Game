@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, #1b1b3a, #4b0082);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: rgba(26, 6, 30, 0.9);
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.nav li {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+.score {
+    color: #f8d4fe;
+    font-size: 1.1rem;
+}
+
+
+/* Buttons */
+button {
+    width: auto;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+
+.normal, .dual, .reset, .goBtn, .letrBtn {
+    background: linear-gradient(135deg, #7d0193, #500d5b);
+    color: white;
+    letter-spacing: 1px;
+    font-style: italic;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.normal:active, .dual:active, .reset:active, .goBtn:active {
+    background: linear-gradient(135deg, #9a23aa, #640f70);
+}
+
+
+.letrBtn {
+    width: 60px;
+    height: 40px;
+}
+
+
+.letrBtn:disabled {
+    background: rgba(190, 12, 222, 0.6);
+}
+
+
+/* Input Field */
+#dualInput {
+    width: 220px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 1rem;
+    border: 2px solid #7d0193;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+
+#dualInput::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* Image */
+img {
+    width: 90%;
+    max-width: 350px;
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+.leaderBoard {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    background: rgba(26, 6, 30, 0.8);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.leaderBoard > h2 {
+    font-size: 1.8rem;
+    color: #f8d4fe;
+    margin-bottom: 10px;
+}
+
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+
+.nmode, .dmode {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    img {
+        max-width: 250px;
+    }
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+

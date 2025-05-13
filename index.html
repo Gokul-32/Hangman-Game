@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>HANGMAN GAME</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav">
+            <li><button class="normal">Normal</button></li>
+            <li><button class="dual">Dual</button></li>
+            <li class="score">Wrong Count: <span class="wrongCount">0</span></li>
+        </ul>
+    </nav>
+
+    <img src="images/0.jpg" width="400" height="400"/>
+
+    <!-- Add these missing elements below -->
+    <div class="dualBlock" style="display:none;">
+        <input type="text" id="dualInput" placeholder="Enter word for opponent">
+        <button class="goBtn">Start Game</button>
+    </div>
+
+    <div class="answer"></div>
+    <div class="buttons"></div>
+
+    <div class="leaderBoard">
+        <h2>Leader Board</h2>
+        <div class="scores">
+            <div class="nmode">
+                Normal Mode<br>
+                <span class="nmodeBoard">Min-Wrongs : </span>
+            </div>
+            <div class="dmode">
+                Dual Mode<br>
+                <span class="dmodeBoard">Min-Wrongs : </span>
+            </div>
+        </div>
+    </div>
+
+    <button class="reset">Reset Game</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>HANGMAN GAME</title>
+</head>
+<body>
+    <nav class = "navbar">
+        <ul class = "nav">
+            <li><button class = "normal">Normal</button></li>
+            <li><button class = "dual">Dual</button></li>
+            <li class="score">Wrong Count: <span class="wrongCount">0/6</span></li>
+        </ul>
+    </nav>
+
+    <img src="images/0.jpg" width="400" height="400"/>
+
+    <div class = "leaderBoard">
+        <h2>Leader Board</h2>
+        <div class = "scores">
+            <div class = "nmode">Normal Mode  <br>
+                <span class = "nmodeBoard">Min-Wrongs : </span>
+            </div>
+            <div class = "dmode">Dual Mode  <br>
+                <span class = "dmodeBoard">Min-Wrongs : </span>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html> -->
+
